@@ -24,9 +24,8 @@ if (process.argv[2] === undefined) {
   j = "script";
 }
 const readAndWriteFiles = (projectDir) => {
-  //console.log(projectDir);
 
-  fs.readFile(__dirname + "/" + h + ".html", (err, data) => {
+  fs.readFile(__dirname + "/index.html", (err, data) => {
     if (err) {
       throw err;
     }
