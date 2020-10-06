@@ -2,7 +2,7 @@
 
 const fs = require("fs");
 const process = require("process");
-
+// if the directory called from command line doesn't exists
 if (process.argv[2] === undefined) {
   var h, c, j;
   if (
@@ -23,12 +23,14 @@ if (process.argv[2] === undefined) {
   c = "style";
   j = "script";
 }
+// Function to read and write data in the file
 const readAndWriteFiles = (projectDir) => {
-
+  // Reading the contents of index.html file
   fs.readFile(__dirname + "/index.html", (err, data) => {
     if (err) {
       throw err;
     }
+  // Creating a new html file and writing data in that html file
     fs.writeFile(projectDir + "/" + h + ".html", data, (err) => {
       if (err) {
         throw err;
@@ -45,7 +47,7 @@ const readAndWriteFiles = (projectDir) => {
 
     console.log("Created " + j + ".js");
   });
-
+  // Creating CSS file in project directory
   fs.open(projectDir + "/" + c + ".css", "w", (err, file) => {
     if (err) {
       throw err;
@@ -54,12 +56,15 @@ const readAndWriteFiles = (projectDir) => {
     console.log("Created " + c + ".css");
   });
 };
-
+// To get directory name from command line arguments
 const dirToCreate = process.argv[2];
+// To get current working directory
 let projectDir = process.cwd();
 if (!dirToCreate) {
+  // Making the read-write operations in the current working directory
   readAndWriteFiles(projectDir);
 } else {
+  //Making a new project directory and making read-write operations in that directory
   projectDir = projectDir + "/" + dirToCreate;
   fs.mkdir(projectDir, (err) => {
     if (err) {
