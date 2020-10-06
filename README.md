@@ -1,11 +1,11 @@
 # BPLATE
-> A NodeJS Utility to generate Boilerplate HTML,CSS and JS Files for a Vanilla JS Project.
+> A NodeJS Utility to generate Boilerplate HTML, CSS and JS Files for a Vanilla JS Project.
 
 <br>
-When you have just started learning web development and you create simple HTML,CSS and Vanilla JS projects to get the hang of it,Bplate creates these HTML,CSS and JS files for you in a folder of the name you provided with the command or inside current directory if you don't specify command.
+When you have just started learning web development and you create simple HTML, CSS and Vanilla JS projects to get the hang of it, Bplate creates these HTML, CSS and JS files for you in a folder of the name you provided with the command or inside current directory if you don't specify command.
 <br>
 <br>
-You don't have to create and link these files again and again.Just run blate and start creating your next vanilla js project.
+You don't have to create and link these files again and again. Just run bplate and start creating your next vanilla js project.
 
 ![](header.png)
 
@@ -25,11 +25,11 @@ npm install -g C:\tools\bplate
 
 
 
-To cteate HTML,CSS and JS files in a folder named 'some_folder'
+To create HTML, CSS and JS files in a folder named 'some_folder'
 ```sh
 bplate some_folder
 ```
-To cteate HTML,CSS and JS files in current folder
+To create HTML, CSS and JS files in current folder
 ```sh
 bplate
 ```
