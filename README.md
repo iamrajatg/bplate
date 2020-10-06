@@ -1,5 +1,5 @@
 # BPLATE
-> A Node Module to generate Boilerplate HTML,CSS and JS Files for a Vanilla JS Project.
+> A NodeJS Utility to generate Boilerplate HTML,CSS and JS Files for a Vanilla JS Project.
 
 <br>
 When you have just started learning web development and you create simple HTML,CSS and Vanilla JS projects to get the hang of it,Bplate creates these HTML,CSS and JS files for you in a folder of the name you provided with the command or inside current directory if you don't specify command.
