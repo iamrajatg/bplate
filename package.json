@@ -1,0 +1,15 @@
+{
+    "name": "bplate",
+    "version": "1.0.0",
+    "description": "Generate Boilerplate files for Vanilla JS",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Rajat Gupta",
+    "license": "ISC",
+    "bin": {
+        "bplate": "./bin/create-files.js"
+    },
+    "dependencies": {}
+}
